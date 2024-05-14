@@ -1,223 +1,221 @@
 <!DOCTYPE html>
 <html lang="vi">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang Chủ</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-...." crossorigin="anonymous" />
-</head>
+    <link rel="stylesheet" href="./asset/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-...."
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-<main id="container">
-    <header id="header">
+  <body>
+    <main id="container">
+      <header id="header">
         <div class="logo-wrapper">
-            <img src="/img/TMV Park.png" alt="TMV Park">
+          <img src="./asset/img/TMV Park.png" alt="TMV Park" />
         </div>
         <h1>Chào mừng bạn đến với TMV Park</h1>
-        <form action="/search" method="get">
-            <input type="text" name="q" placeholder="Tìm kiếm...">
-            <input type="submit" value="Tìm kiếm">
+        <form action="./search" method="get">
+          <input type="text" name="q" placeholder="Tìm kiếm..." />
+          <input type="submit" value="Tìm kiếm" />
         </form>
-    </header>
-    <nav id="navbar">
+      </header>
+      <nav id="navbar">
         <div class="navbar-toggle" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
+          <i class="fas fa-bars"></i>
         </div>
         <ul class="navbar-links">
-            <li class="navbar-link">
-                <i class="fa-solid fa-house"></i>
-                <a href="/index.html">Trang chủ</a>
-            </li>
-            <li class="navbar-link">
-                <span>Giá Vé
-                    <div class="navbar-menu">
-                        <a href="/giave/giavekhachle.html">Giá vé khách lẻ</a>
-                        <a href="/giave/giavephuongtien.html">Giá vé phương tiện </a>
-                        <a href="/giave/giavedichvu.html">Giá vé dịch vụ</a>
-                    </div>
-                </span>
-            </li>
-            <li class="navbar-link">
-                <a href="#" class="game-dropdown-toggle">Trò chơi</a>
-                <div class="game-dropdown-menu">
-                    <div class="column">
-                        <a href="/trochoi/tauvuotthac.html">Tàu Vượt Thác</a>
-                        <a href="/trochoi/bansung.html">Bắn Súng</a>
-                        <a href="/trochoi/vongquaythantoc.html">Vòng Quay Thần Tốc</a>
-                        <a href="/trochoi/laudaikinhdi.html">Lâu Đài Kinh Dị</a>
-                    </div>
-                    <div class="column">
-                        <a href="/trochoi/laudaikithu.html">Lâu Đài Kì Thú</a>
-                        <a href="/trochoi/rongluon.html">Rồng Lượn</a>
-                        <a href="/trochoi/sieunhan.html">Siêu Nhân Robot</a>
-                        <a href="/trochoi/SpinningCoaster.html">SpingningCoaster</a>
-                    </div>
-                    <div class="column">
-                        <a href="/trochoi/bangdang.html">Băng Đăng</a>
-                        <a href="/trochoi/dapvit.html">Đạp Vịt</a>
-                        <a href="/trochoi/duaxe.html">Đua Xe</a>
-                        <a href="/trochoi/xemphim.html">Xem Phim </a>
-
-                    </div>
-                </div>
-            </li>
-            <li class="navbar-link">
-                <span>Cảnh đẹp
-                    <div class="navbar-menu">
-                        <a href="/canhdep/vuonnhatban.html">Vườn Nhật Bản</a>
-                        <a href="/canhdep/xuongrong.html">Vườn xương rồng</a>
-                        <a href="/canhdep/lanrung.html">Đảo Lan rừng</a>
-                        <a href="/canhdep/caucuukhuc.html">Cầu cửu khúc</a>
-
-                    </div>
-                </span>
-            </li>
-            <li class="navbar-link">
-                <a href="/sankhau/sankhau.html">Sân khấu</a>
-            </li>
-            <li class="navbar-link">
-                <span>Sự kiện
-                    <div class="navbar-menu">
-                        <a href="/sukien/sukiendtc.html">Đã tổ chức</a>
-                        <a href="/sukien/sukienstc.html">Sắp tổ chức</a>
-
-                    </div>
-                </span>
-            </li>
-            <li class="navbar-link">
-                <a href="/lienhe/contact.html">Liên hệ</a>
-            </li>
+          <li class="navbar-link">
+            <i class="fa-solid fa-house"></i>
+            <a href="./index.html">Trang chủ</a>
+          </li>
+          <li class="navbar-link">
+            <span
+              >Giá Vé
+              <div class="navbar-menu">
+                <a href="./giave/giavekhachle.html">Giá vé khách lẻ</a>
+                <a href="./giave/giavephuongtien.html">Giá vé phương tiện </a>
+                <a href="./giave/giavedichvu.html">Giá vé dịch vụ</a>
+              </div>
+            </span>
+          </li>
+          <li class="navbar-link">
+            <a href="#" class="game-dropdown-toggle">Trò chơi</a>
+            <div class="game-dropdown-menu">
+              <div class="column">
+                <a href="./trochoi/tauvuotthac.html">Tàu Vượt Thác</a>
+                <a href="./trochoi/bansung.html">Bắn Súng</a>
+                <a href="./trochoi/vongquaythantoc.html">Vòng Quay Thần Tốc</a>
+                <a href="./trochoi/laudaikinhdi.html">Lâu Đài Kinh Dị</a>
+              </div>
+              <div class="column">
+                <a href="./trochoi/laudaikithu.html">Lâu Đài Kì Thú</a>
+                <a href="./trochoi/rongluon.html">Rồng Lượn</a>
+                <a href="./trochoi/sieunhan.html">Siêu Nhân Robot</a>
+                <a href="./trochoi/SpinningCoaster.html">SpingningCoaster</a>
+              </div>
+              <div class="column">
+                <a href="./trochoi/bangdang.html">Băng Đăng</a>
+                <a href="./trochoi/dapvit.html">Đạp Vịt</a>
+                <a href="./trochoi/duaxe.html">Đua Xe</a>
+                <a href="./trochoi/xemphim.html">Xem Phim </a>
+              </div>
+            </div>
+          </li>
+          <li class="navbar-link">
+            <span
+              >Cảnh đẹp
+              <div class="navbar-menu">
+                <a href="./canhdep/vuonnhatban.html">Vườn Nhật Bản</a>
+                <a href="./canhdep/xuongrong.html">Vườn xương rồng</a>
+                <a href="./canhdep/lanrung.html">Đảo Lan rừng</a>
+                <a href="./canhdep/caucuukhuc.html">Cầu cửu khúc</a>
+              </div>
+            </span>
+          </li>
+          <li class="navbar-link">
+            <a href="./sankhau/sankhau.html">Sân khấu</a>
+          </li>
+          <li class="navbar-link">
+            <span
+              >Sự kiện
+              <div class="navbar-menu">
+                <a href="./sukien/sukiendtc.html">Đã tổ chức</a>
+                <a href="./sukien/sukienstc.html">Sắp tổ chức</a>
+              </div>
+            </span>
+          </li>
+          <li class="navbar-link">
+            <a href="./lienhe/contact.html">Liên hệ</a>
+          </li>
         </ul>
-    </nav>
-        <section id="content-left">
-            <!-- Content left section is empty -->
-        </section>
+      </nav>
+      <section id="content-left">
+        <!-- Content left section is empty -->
+      </section>
 
-        <section id="content-mid">
-            <h2 class="heading">Siêu nhân Robot</h2>
+      <section id="content-mid">
+        <h2 class="heading">Siêu nhân Robot</h2>
 
+        <br />
+        <p>
+          Trò chơi này lại có hình dáng những siêu anh hùng robot. Mỗi máy bay đều
+          trang bị súng laser để chiến đấu. Các bé sẽ đóng vai những siêu anh hùng
+          điều khiển những cỗ máy robot bay lượn trong không gian, tiêu diệt quái vật
+          Alien.
+        </p>
+        <br />
+        <div class="image-wrapper">
+          <p>
+            <img src="./asset/img/sieu-nhan-robot-02.jpg" alt="mid-1" />
+          </p>
+          <br />
+          <p>
+            <img src="./asset/img/sieu-nhan-robot-03.jpg" alt="mid-1" />
+          </p>
+          <br />
+          <p>
+            <img src="./asset/img/sieu-nhan-robot-04.jpg" alt="mid-1" />
+          </p>
+          <br />
+        </div>
+      </section>
+      <section id="content-right">
+        <!-- Content right section is empty -->
+      </section>
 
-            <br>
-            <p>
-            Trò chơi này lại có hình dáng những siêu anh hùng robot. Mỗi máy bay đều trang bị súng laser để chiến đấu. Các bé sẽ đóng
-            vai những siêu anh hùng điều khiển những cỗ máy robot bay lượn trong không gian, tiêu diệt quái vật Alien.
-            </p>
-            <br>
-            <div class="image-wrapper">
+      <footer id="footer">
+        <div class="footer-wrapper">
+          <h2 class="footer-heading">Trực thuộc</h2>
+          <div class="footer-box">
+            <img src="./asset/img/TMV Park (1).png" alt="Logo công ty" />
+            <a>Công ty vui chơi & giải trí TMV Park</a>
+          </div>
+        </div>
 
-                <p>
-                    <img src="/img/sieu-nhan-robot-02.jpg" alt="mid-1">
+        <div class="footer-wrapper">
+          <h2 class="footer-heading">Giờ mở cửa</h2>
+          <div class="footer-box">
+            <a>Thứ Hai:</a> <a>7:30 AM - 6:00 PM </a><br />
+            <a>Thứ Ba:</a> <a>7:30 AM - 6:00 PM </a><br />
+            <a>Thứ Tư:</a> <a>7:30 AM - 6:00 PM </a><br />
+            <a>Thứ Năm:</a> <a>7:30 AM - 6:00 PM </a><br />
+            <a>Thứ Sáu:</a> <a>7:30 AM - 6:00 PM </a><br />
+            <a>Thứ Bảy:</a> <a>7:30 AM - 6:00 PM </a><br />
+            <a>Chủ Nhật:</a> <a>7:30 AM - 6:00 PM </a>
+          </div>
+        </div>
 
+        <div class="footer-wrapper">
+          <h2 class="footer-heading">Liên hệ</h2>
+          <div class="footer-box">
+            <a href="">
+              <i class="fa-regular fa-envelope"></i>
+              Gmail :DH52112111@student.stu.edu.vn
+            </a>
+          </div>
+          <div class="footer-box">
+            <a href="">
+              <i class="fa-solid fa-phone"></i>
+              SĐT: 0765142236
+            </a>
+          </div>
+          <div class="footer-box">
+            <a href=""> Thạch Minh Vũ-DH52112111-D21_TH09 </a>
+          </div>
+        </div>
 
-                </p>
-                <br>
-                <p>
-                    <img src="/img/sieu-nhan-robot-03.jpg" alt="mid-1">
-
-
-                </p>
-                <br>
-                <p>
-                    <img src="/img/sieu-nhan-robot-04.jpg" alt="mid-1">
-
-
-                </p>
-                <br>
-
-            </div>
-
-        </section>
-        <section id="content-right">
-            <!-- Content right section is empty -->
-        </section>
-
-        <footer id="footer">
-            <div class="footer-wrapper">
-                <h2 class="footer-heading">Trực thuộc </h2>
-                <div class="footer-box">
-                    <img src="/img/TMV Park (1).png" alt="Logo công ty">
-                    <a>Công ty vui chơi & giải trí TMV Park</a>
-
-                </div>
-            </div>
-
-            <div class="footer-wrapper">
-                <h2 class="footer-heading">Giờ mở cửa</h2>
-                <div class="footer-box">
-                    <a>Thứ Hai:</a> <a>7:30 AM - 6:00 PM </a><br>
-                    <a>Thứ Ba:</a> <a>7:30 AM - 6:00 PM </a><br>
-                    <a>Thứ Tư:</a> <a>7:30 AM - 6:00 PM </a><br>
-                    <a>Thứ Năm:</a> <a>7:30 AM - 6:00 PM </a><br>
-                    <a>Thứ Sáu:</a> <a>7:30 AM - 6:00 PM </a><br>
-                    <a>Thứ Bảy:</a> <a>7:30 AM - 6:00 PM </a><br>
-                    <a>Chủ Nhật:</a> <a>7:30 AM - 6:00 PM </a>
-                </div>
-
-
-            </div>
-
-            <div class="footer-wrapper">
-                <h2 class="footer-heading">Liên hệ</h2>
-                <div class="footer-box">
-                    <a href="">
-                        <i class="fa-regular fa-envelope"></i>
-                        Gmail :DH52112111@student.stu.edu.vn
-                    </a>
-                </div>
-                <div class="footer-box">
-                    <a href="">
-                        <i class="fa-solid fa-phone"></i>
-                        SĐT: 0765142236
-                    </a>
-                </div>
-                <div class="footer-box">
-                    <a href="">
-
-                        Thạch Minh Vũ-DH52112111-D21_TH09
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer-wrapper">
-                <h2 class="footer-heading">Mạng xã hội</h2>
-                <div class="footer-box">
-                    <a href="https://www.facebook.com/DTND30072001/">
-                        <i class="fa-brands fa-facebook"></i>
-                        Facebook
-                    </a>
-                </div>
-                <div class="footer-box">
-                    <a href="">
-                        <i class="fa-brands fa-youtube"></i>
-                        Youtube
-                    </a>
-                </div>
-                <div class="footer-box">
-                    <a href="https://www.instagram.com/tmv.02/">
-                        <i class="fa-brands fa-instagram"></i>
-                        Instagram
-                    </a>
-                </div>
-            </div>
-        </footer>
+        <div class="footer-wrapper">
+          <h2 class="footer-heading">Mạng xã hội</h2>
+          <div class="footer-box">
+            <a href="https://www.facebook.com/DTND30072001/">
+              <i class="fa-brands fa-facebook"></i>
+              Facebook
+            </a>
+          </div>
+          <div class="footer-box">
+            <a href="">
+              <i class="fa-brands fa-youtube"></i>
+              Youtube
+            </a>
+          </div>
+          <div class="footer-box">
+            <a href="https://www.instagram.com/tmv.02/">
+              <i class="fa-brands fa-instagram"></i>
+              Instagram
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
-</body>
-<script src="/js/javascript.js"></script>
-<script src="/js/mobile.js"></script>
+  </body>
+  <script src="./asset/js/javascript.js"></script>
+  <script src="./asset/js/mobile.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
+    crossorigin="anonymous"
+  ></script>
 </html>
