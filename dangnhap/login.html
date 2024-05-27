@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Đăng nhập</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/CentralPark-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Thêm link CSS của Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS không cần nữa, đã được thay thế bằng Tailwind CSS -->
+</head>
+
+<style>
+    /* Để lại các tùy chỉnh CSS cần thiết ở đây */
+    .error-text {
+        color: red;
+    }
+</style>
+
+<body class="bg-gray-100"> <!-- Thêm lớp background cho toàn bộ body -->
+
+    <div id="content" class="flex justify-center items-center h-screen">
+        <!-- Thay d-flex bằng flex, và các class margin và border của Bootstrap bằng các lớp của Tailwind -->
+        <form id="login-form" class="p-5 rounded-lg border border-green-500" name="frmLogin" action="">
+            <h1 class="text-center mb-4">Login</h1>
+            <div class="mb-4"> <!-- Thay d-flex và form-outline bằng lớp của Tailwind -->
+                <input type="text" id="username"
+                    class="form-control w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-green-500"
+                    name="username" placeholder="User Name">
+                <!-- Thêm các lớp của Tailwind và loại bỏ class form-outline -->
+                <p id="error-text-1" class="error-text"></p>
+            </div>
+
+            <div class="mb-4"> <!-- Thay d-flex và form-outline bằng lớp của Tailwind -->
+                <input type="password" id="password"
+                    class="form-control w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-green-500"
+                    placeholder="Password"> <!-- Thêm các lớp của Tailwind và loại bỏ class form-outline -->
+                <p id="error-text-2" class="error-text"></p>
+            </div>
+
+            <div class="flex justify-between mb-4"> <!-- Thay d-flex và class row bằng lớp của Tailwind -->
+                <div class="flex items-center"> <!-- Thay d-flex và class col bằng lớp của Tailwind -->
+                    <input class="form-check-input" type="checkbox" id="form2Example31" checked>
+                    <!-- Thêm lớp của Tailwind cho checkbox -->
+                    <label class="form-check-label ml-2" for="form2Example31">Remember me</label>
+                    <!-- Thêm lớp margin-left và loại bỏ class form-check-label -->
+                </div>
+
+                <div>
+                    <a href="#!" class="text-green-500">Forgot password?</a> <!-- Thêm lớp của Tailwind -->
+                </div>
+            </div>
+
+            <div class="flex justify-center mb-4"> <!-- Thay d-flex bằng lớp của Tailwind -->
+                <button type="button" class="btn btn-primary btn-block w-full" onclick="return myFunction()">Sign
+                    in</button> <!-- Thay class của Bootstrap bằng lớp của Tailwind và thêm lớp full width -->
+            </div>
+
+            <div class="text-center mb-4"> <!-- Thay d-flex và text-center bằng lớp của Tailwind -->
+                <p>Not a member? <a href="register.html" class="text-green-500">Register</a></p>
+                <!-- Thêm lớp của Tailwind -->
+            </div>
+            <div class="text-center"> <!-- Thay d-flex và text-center bằng lớp của Tailwind -->
+                <p><a href="/index.html" class="text-green-500" style="text-decoration: none;"><i
+                            class="fa-solid fa-arrow-left"></i>Go back</a></p> <!-- Thêm lớp của Tailwind -->
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
