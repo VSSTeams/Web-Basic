@@ -160,6 +160,7 @@ html {
     "footer footer footer";
   height: 100vh;
 }
+
 .container {
   max-width: 1346px;
   width: 100%;
@@ -724,9 +725,19 @@ form input[type="submit"]:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
+
 @media screen and (max-width: 1040px) {
+  .footer-wrapper-r {
+    margin-right: 0;
+  }
+
+  .footer-wrapper-l {
+    margin-left: 0;
+  }
+
   #footer .container {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
   }
 }
 
@@ -764,12 +775,14 @@ form input[type="submit"]:hover {
 #footer .footer-box.contact a {
   margin-bottom: 10px;
 }
+
 #footer .footer-box.social,
 .footer-box.contact {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
 #footer .footer-box a,
 span {
   text-decoration: none;
@@ -780,6 +793,7 @@ span {
   transition: 0.3s;
   min-width: 100px;
 }
+
 #footer .footer-box a:hover {
   color: #0ed7d7;
   transition: 0.3s;
@@ -791,12 +805,22 @@ span {
 }
 
 @media screen and (max-width: 528px) {
+  .footer-wrapper-r {
+    margin-right: 0;
+  }
+
+  .footer-wrapper-l {
+    margin-left: 0;
+  }
+
   #footer .container {
     grid-template-columns: 1fr;
   }
+
   #footer .footer-box.contact a {
     margin-bottom: 0px;
   }
+
   #footer .footer-box.social,
   .footer-box.contact {
     display: flex;
